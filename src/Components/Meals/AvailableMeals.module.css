@@ -1,0 +1,41 @@
+.meals {
+    max-width: 60rem;
+    margin: 2rem auto;
+    margin-top: 13rem;
+    animation: meals-appear 1s ease-out forwards;
+    line-height: 25px;
+  }
+
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mealsList{
+    text-align: center;
+    max-width: 65rem;
+   
+    margin: auto;
+    margin-top: 1rem;
+    position: relative;
+    background-color: #f0e7e7;
+    color: rgb(7, 6, 6);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    list-style: none;
+
+  }
+
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
