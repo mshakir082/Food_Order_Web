@@ -38,3 +38,9 @@
   font-size: 22px;
   margin-top: 28px;
 }
+.header_logo_container{
+ display:flex;justify-content:center;width:18%;
+}
+.header_logo_img{
+  width:30%;height:15%;margin:auto;
+}

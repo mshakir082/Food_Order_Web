@@ -1,5 +1,4 @@
 import React, {Fragment} from "react";
-import mealsImage from '../../Assets/restaurant-2.jpg';
 import classes from './Header.module.css';
 import HeaderCartButton from "./HeaderCartButton";
 import food_logo  from '../../Hussain_Food_Logo.png'
@@ -7,8 +6,8 @@ const Header = props => {
     return(
      <Fragment>
         <header className={classes.header} >
-           <div style={{display:'flex',justifyContent:'center',width:'15%'}}> 
-            <img src={food_logo} alt='logo' style={{width:'30%',height:'15%',margin:'auto'}}/>
+           <div className={classes.header_logo_container}> 
+            <img src={food_logo} alt='logo' className={classes.header_logo_img}/>
             <h3 className={classes.header_logo_title}>Hussain Food</h3>
            </div>
            <HeaderCartButton  onClick={props.onShowCart}/>
