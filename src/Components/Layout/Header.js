@@ -11,7 +11,7 @@ const Header = props => {
             <img src={food_logo} alt='logo' style={{width:'30%',height:'15%',margin:'auto'}}/>
             <h3 className={classes.header_logo_title}>Hussain Food</h3>
            </div>
-            <HeaderCartButton />
+           <HeaderCartButton  onClick={props.onShowCart}/>
         </header>
         <div className={classes['main-image']}>
             <img src = {'https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp'} alt= "restaurant_image "></img>
